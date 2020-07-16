@@ -1,0 +1,26 @@
+{
+  "name": "webpack4.0-programmer",
+  "version": "1.0.0",
+  "description": "study webpack4.0",
+  "main": "12.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Monster880/webpack4.0-programmer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Monster880/webpack4.0-programmer/issues"
+  },
+  "homepage": "https://github.com/Monster880/webpack4.0-programmer#readme",
+  "devDependencies": {
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "webpack": "^4.43.0"
+  }
+}
