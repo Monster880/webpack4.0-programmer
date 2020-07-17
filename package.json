@@ -4,7 +4,8 @@
   "description": "study webpack4.0",
   "main": "12.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bundle":"webpack",
+    "start": ""
   },
   "repository": {
     "type": "git",
