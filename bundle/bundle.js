@@ -86,25 +86,15 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/content.js":
-/*!************************!*\
-  !*** ./src/content.js ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "./src/123.jpg":
+/*!*********************!*\
+  !*** ./src/123.jpg ***!
+  \*********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("function Content() {\r\n  var dom = document.getElementById(\"root\");\r\n  var content = document.createElement(\"div\");\r\n  content.innerText = \"这是Content\";\r\n  dom.append(content);\r\n}\r\n\r\nmodule.exports = Content;\r\n\n\n//# sourceURL=webpack:///./src/content.js?");
-
-/***/ }),
-
-/***/ "./src/header.js":
-/*!***********************!*\
-  !*** ./src/header.js ***!
-  \***********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("function Header() {\r\n  var dom = document.getElementById(\"root\");\r\n  var header = document.createElement(\"div\");\r\n  header.innerText = \"这是header\";\r\n  dom.append(header);\r\n}\r\n\r\nmodule.exports = Header;\r\n\n\n//# sourceURL=webpack:///./src/header.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"af84b28396f7848886218ae2c5917709.jpg\");\n\n//# sourceURL=webpack:///./src/123.jpg?");
 
 /***/ }),
 
@@ -112,21 +102,11 @@ eval("function Header() {\r\n  var dom = document.getElementById(\"root\");\r\n 
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("// ES Module 模块引入方式\r\n// CommonJS 模块引入规范\r\n// CMD\r\n// ADM\r\n\r\n// webpack 模块打包工具\r\n// js 模块打包工具 ->css 模块打包工具\r\n\r\n// import Header from \"./header.js\";\r\n// import Sidebar from \"./sidebar.js\";\r\n// import Content from \"./content.js\";\r\n\r\nvar Header = __webpack_require__(/*! ./header.js */ \"./src/header.js\");\r\nvar Sidebar = __webpack_require__(/*! ./sidebar.js */ \"./src/sidebar.js\");\r\nvar Content = __webpack_require__(/*! ./content.js */ \"./src/content.js\");\r\n\r\nnew Header();\r\nnew Sidebar();\r\nnew Content();\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/sidebar.js":
-/*!************************!*\
-  !*** ./src/sidebar.js ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("function Sidebar() {\r\n  var dom = document.getElementById(\"root\");\r\n  var sidebar = document.createElement(\"div\");\r\n  sidebar.innerText = \"这是sidebar\";\r\n  dom.append(sidebar);\r\n}\r\n\r\nmodule.exports = Sidebar;\r\n\n\n//# sourceURL=webpack:///./src/sidebar.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _123_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./123.jpg */ \"./src/123.jpg\");\n// ES Module 模块引入方式\r\n// CommonJS 模块引入规范\r\n// CMD\r\n// ADM\r\n\r\n// webpack 模块打包工具\r\n// js 模块打包工具 ->css 模块打包工具\r\n\r\n// import Header from \"./header.js\";\r\n// import Sidebar from \"./sidebar.js\";\r\n// import Content from \"./content.js\";\r\n\r\n\r\n\r\nvar img = new Image();\r\nimg.src = _123_jpg__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\r\n\r\nvar root = document.getElementById(\"root\");\r\nroot.append(img);\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
