@@ -8,9 +8,21 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jpg$/,
+        test: /\.(jpg|png|gif)$/,
         use: {
-          loader: "file-loader",
+          loader: "url-loader",
+          options: {
+            // placeholder 占位符
+            name: "[name]_[hash].[ext]",
+            outputPath: "images/",
+            limit: 20480,
+          },
+        },
+      },
+      {
+        test: /\.vue$/,
+        use: {
+          loader: "vue-loader",
         },
       },
     ],

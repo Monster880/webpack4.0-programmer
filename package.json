@@ -20,6 +20,7 @@
   "homepage": "https://github.com/Monster880/webpack4.0-programmer#readme",
   "devDependencies": {
     "file-loader": "^6.0.0",
+    "url-loader": "^4.1.0",
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
