@@ -20,8 +20,10 @@
   "homepage": "https://github.com/Monster880/webpack4.0-programmer#readme",
   "devDependencies": {
     "autoprefixer": "^9.8.4",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.6.0",
     "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
     "postcss-loader": "^3.0.0",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.2",
