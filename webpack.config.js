@@ -5,9 +5,11 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   mode: "development",
+  // development devtool: "cheap-module-eval-source-map",
+  // production devtool: "cheap-module-source-map",
+  devtool: "cheap-module-eval-source-map",
   entry: {
     main: "./src/index.js",
-    sub: "./src/index.js",
   },
   module: {
     rules: [
@@ -60,7 +62,6 @@ module.exports = {
   ],
 
   output: {
-    publicPath: "http://cdn.com.cn",
     filename: "[name].js",
     path: path.resolve(__dirname, "bundle"),
   },
