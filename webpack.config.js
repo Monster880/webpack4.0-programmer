@@ -11,6 +11,14 @@ module.exports = {
   entry: {
     main: "./src/index.js",
   },
+  devServer: {
+    contentBase: "./bundle",
+    open: true,
+    port: 8090,
+    proxy: {
+      "/api": "http://localhost:3000",
+    },
+  },
   module: {
     rules: [
       {
@@ -56,12 +64,12 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      template: "src/index.html",
+      template: "./src/index.html",
     }),
-    new CleanWebpackPlugin(),
   ],
 
   output: {
+    publicPath: "/",
     filename: "[name].js",
     path: path.resolve(__dirname, "bundle"),
   },
