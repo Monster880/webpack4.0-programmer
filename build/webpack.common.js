@@ -2,22 +2,10 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 // plugin可以在webpack运行到某个时刻的时候，帮你做一些事情
-const webpack = require("webpack");
 
 module.exports = {
-  mode: "development",
-  // development devtool: "cheap-module-eval-source-map",
-  // production devtool: "cheap-module-source-map",
-  devtool: "cheap-module-eval-source-map",
   entry: {
     main: "./src/index.js",
-  },
-  devServer: {
-    contentBase: "./bundle",
-    open: true,
-    port: 8090,
-    hot: true,
-    hotOnly: true,
   },
   module: {
     rules: [
@@ -70,21 +58,15 @@ module.exports = {
       },
     ],
   },
-
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
     }),
-    // new CleanWebpackPlugin(["bundle"]),
-    new webpack.HotModuleReplacementPlugin(),
+    new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: ["bundle"] }),
   ],
-  optimization: {
-    usedExports: true,
-  },
-
   output: {
     // publicPath: "/",
     filename: "[name].js",
-    path: path.resolve(__dirname, "bundle"),
+    path: path.resolve(__dirname, "..", "bundle"),
   },
 };

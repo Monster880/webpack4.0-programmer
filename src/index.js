@@ -4,4 +4,4 @@
 // babel window.Promise
 import { add } from "./math.js";
 
-add(1, 5);
+add(1, 2);

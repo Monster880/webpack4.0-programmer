@@ -1,12 +1,14 @@
 {
   "name": "webpack4.0-programmer",
-  "sideEffects":["*.css"],
+  "sideEffects": [
+    "*.css"
+  ],
   "version": "1.0.0",
   "description": "study webpack4.0",
   "main": "12.js",
   "scripts": {
-    "dev": "webpack-dev-server --config webpack.dev.js",
-    "build":"webpack --config webpack.prod.js"
+    "dev": "webpack-dev-server --config ./build/webpack.dev.js",
+    "build": "webpack --config ./build/webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -39,7 +41,8 @@
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-middleware": "^3.7.2",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.0.9"
   },
   "dependencies": {
     "@babel/polyfill": "^7.10.4",
