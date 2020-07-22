@@ -4,10 +4,7 @@
   "description": "study webpack4.0",
   "main": "12.js",
   "scripts": {
-    "bundle": "webpack",
-    "watch": "webpack --watch",
-    "start": "webpack-dev-server",
-    "server": "node server.js"
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
