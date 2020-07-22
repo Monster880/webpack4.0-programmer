@@ -69,7 +69,7 @@ module.exports = {
   ],
 
   output: {
-    publicPath: "/",
+    // publicPath: "/",
     filename: "[name].js",
     path: path.resolve(__dirname, "bundle"),
   },
