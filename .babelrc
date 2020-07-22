@@ -1,24 +1,25 @@
 { 
-  // presets: [
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "chrome": "67"
+        },
+        "useBuiltIns": "usage"
+      }
+    ],
+    "@babel/preset-react"
+  ]
+  // "plugins": [
   //   [
-  //     "@babel/preset-env",
+  //     "@babel/plugin-transform-runtime",
   //     {
-  //       targets: {
-  //         chrome: "67",
-  //       }
-  //       useBuiltIns: "usage"
+  //       "corejs": 2,
+  //       "helpers": true,
+  //       "regenerator": true,
+  //       "useESModules": false
   //     }
   //   ]
   // ]
-  "plugins": [
-    [
-      "@babel/plugin-transform-runtime",
-      {
-        "corejs": 2,
-        "helpers": true,
-        "regenerator": true,
-        "useESModules": false
-      }
-    ]
-  ]
 }
