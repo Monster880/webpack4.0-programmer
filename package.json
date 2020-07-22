@@ -5,7 +5,8 @@
   "description": "study webpack4.0",
   "main": "12.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "dev": "webpack-dev-server --config webpack.dev.js",
+    "build":"webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
