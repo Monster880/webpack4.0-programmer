@@ -16,8 +16,8 @@ module.exports = {
     contentBase: "./bundle",
     open: true,
     port: 8090,
-    // hot: true,
-    // hotOnly: true,
+    hot: true,
+    hotOnly: true,
   },
   module: {
     rules: [
@@ -71,7 +71,7 @@ module.exports = {
       template: "./src/index.html",
     }),
     // new CleanWebpackPlugin(["bundle"]),
-    // new webpack.HotModuleReplacementPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
   ],
 
   output: {
