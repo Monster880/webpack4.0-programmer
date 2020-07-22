@@ -1,5 +1,6 @@
 {
   "name": "webpack4.0-programmer",
+  "sideEffects":["*.css"],
   "version": "1.0.0",
   "description": "study webpack4.0",
   "main": "12.js",

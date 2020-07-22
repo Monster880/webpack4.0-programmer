@@ -5,10 +5,10 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const webpack = require("webpack");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   // development devtool: "cheap-module-eval-source-map",
   // production devtool: "cheap-module-source-map",
-  devtool: "cheap-module-eval-source-map",
+  devtool: "cheap-module-source-map",
   entry: {
     main: "./src/index.js",
   },
@@ -78,6 +78,9 @@ module.exports = {
     // new CleanWebpackPlugin(["bundle"]),
     new webpack.HotModuleReplacementPlugin(),
   ],
+  // optimization: {
+  //   usedExports: true,
+  // },
 
   output: {
     // publicPath: "/",
