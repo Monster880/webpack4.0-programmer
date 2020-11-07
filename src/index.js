@@ -1,7 +1,12 @@
-// Tree shaking摇树 只支持ES模块引入
+import "@babel/polyfill";
 
-// import "@babel/polyfill";
-// babel window.Promise
-import { add } from "./math.js";
+import React, {Component} from 'react';
+import ReactDom from 'react-dom';
 
-add(1, 2);
+class App extends Component {
+  render(){
+    return <div>Hello World</div>
+  }
+}
+
+ReactDom.render(<App />, document.getElementById('root'));
