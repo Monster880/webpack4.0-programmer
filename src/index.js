@@ -1,7 +1,5 @@
-// import { test } from './test.js';
-
-// console.log(test.name);
-
-import _ from 'lodash';
-
-_.join(['a', 'b', 'c'], '~');
+document.addEventListener('click',()=>{
+  import(/* webpackPrefetch: true*/ './click.js').then(({default: func})=>{
+    func();
+  })
+});

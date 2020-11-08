@@ -64,11 +64,11 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
   ],
-  optimization: {
+  optimization: { // lodash.js
     splitChunks: {
       chunks: 'all',
       minSize: 30000,
-      minChunks: 1,
+      minChunks: 2,
       maxAsyncRequests: 5,
       maxInitialRequests: 3,
       automaticNameDelimiter: '~',
@@ -90,6 +90,7 @@ module.exports = {
   output: {
     // publicPath: "/",
     filename: "[name].js",
+    chunkFilename: '[name].chunk.js',
     path: path.resolve(__dirname, "..", "bundle"),
   },
 };
