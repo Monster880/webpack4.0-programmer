@@ -5,7 +5,6 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: {
-    lodash: "./src/lodash.js",
     main: "./src/index.js",
   },
   module: {
@@ -63,8 +62,31 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/index.html",
     }),
-    new CleanWebpackPlugin({ cleanOnceBeforeBuildPatterns: ["bundle"] }),
+    new CleanWebpackPlugin(),
   ],
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+      minSize: 30000,
+      minChunks: 1,
+      maxAsyncRequests: 5,
+      maxInitialRequests: 3,
+      automaticNameDelimiter: '~',
+      name: true,
+      cacheGroups: {
+        defaultVendors: {
+          test: /[\\/]node_modules[\\/]/,
+          priority: -10,
+          filename: 'vendor.js'
+        },
+        default: {
+          priority: -20,
+          reuseExistingChunk: true,
+          filename:'common.js'
+        }
+      }
+    }
+  },
   output: {
     // publicPath: "/",
     filename: "[name].js",
