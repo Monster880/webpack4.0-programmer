@@ -2,6 +2,6 @@
 
 // import "@babel/polyfill";
 // babel window.Promise
-import { add } from "./math.js";
+import { add } from './math.js';
 
 add(1, 2);
